@@ -6,27 +6,65 @@
  <link rel="stylesheet" href="styles.css" />  
  </head>
  <body>
+  <style>
+    body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b47;
+    color: #f1f1b5;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+  }
+  </style>
    <h1 id="title">freeCodeCamp Survey Form </h1>
    <p id="deskription">Thank you for talking the time to help us improve the platform</p>
    <form id="survey-form">
     <fieldset>
-      <label>
+      <label>Name
       <input id="name"></label>
-     <label>
+     <label>Email
      <input id="email">
      </label>
-     <label>
-     <input id="age">
+     <label>Age(optional)
+     <input id="age" type="number" name="age" min="10" max="99" >
      </label>
      </fieldset>
     <fieldset>
       <label>Which options best describes your current role?</label>
       <select>
-      <option value="">Select an option</option>
-      <option value="1">Challenges</option>
-      <option value="2">Projects</option>
-      <option value="3">Projects</option>
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">Other</option>
       </select>
+    </fieldset>
+    <fieldset>
+        <label>Woud you recomend freeCodeCamp to a friend?
+          <input type="radio" name="way-type" class="inline"> First way
+        </label>
+        <label>
+          <input type="radio" name="way-type" class="inline" > Second way
+        </label>
+        <label>
+          <input type="radio" name="way-type" class="inline">Not sure
+        </label>
+    </fieldset>    
+    <fieldset>
+        <label>What is your favorit of freeCodeCamp? 
+        </label>
+        <select>
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+    </fieldset>
+
     </form>
   </body>
 
