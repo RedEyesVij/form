@@ -10,18 +10,18 @@
    <p id="deskription">Thank you for talking the time to help us improve the platform</p>
    <form id="survey-form">
     <fieldset>
-      <label>Name
-      <input id="name"></label>
-     <label>Email
-     <input id="email">
+      <label id="name-label">Name
+      <input id="name" type="text" required placeholder="enter your name" ></label>
+     <label id="email-label">Email
+     <input id="email" type="email" required placeholder="enter your email" >
      </label>
-     <label>Age(optional)
-     <input id="age" type="number" name="age" min="10" max="99" >
+     <label id="number-label">Age(optional)
+     <input id="number" type="number" name="number" min="10" max="99" placeholder="enter your age" >
      </label>
      </fieldset>
     <fieldset>
       <label>Which options best describes your current role?</label>
-      <select>
+      <select id="dropdown" name="dropdoun">
         <option value="">Select current role</option>
         <option value="1">Student</option>
         <option value="2">Full Time Job</option>
@@ -32,7 +32,7 @@
     </fieldset>
     <fieldset>
         <label>Woud you recomend freeCodeCamp to a friend?
-          <input type="radio" name="way-type" class="inline"> First way
+          <input type="radio" name="way-type" class="inline" > First way
         </label>
         <label>
           <input type="radio" name="way-type" class="inline" > Second way
@@ -56,9 +56,28 @@
       <label>What woud you like to see improoved 
         <p>(Check all that apply)</p>
       </label>
-      <input type="radio" name="front-end-projects">
+      <label>
+      <input id="front-end-projects" type="checkbox" name="front-end-projects" value="front-end-projects" class="inline">Front-end Projects
+      </label>
+      <label>
+        <input id="back-end-projects" type="checkbox" name="back-end-projects" value="back-end-projects" class="inline">Back-end Projects
+      </label>
+      <label>  
+        <input id="data-visualization" type="checkbox" name="data-visualization" value="data-visualization" class="inline">Data Visualization
+      </label>
+      <label>
+        <input id="challanges" type="checkbox" name="challanges" value="challanges" class="inline">Challenges 
+      </label>
+      <label>
+        <input id="open-source-community" type="checkbox" name="open-source-community" value="open-source-community" class="inline">Open Source Community
+      </label>
+      </fieldset>
+      <fieldset>
+      <label for="comment">Any comment or suggestion?
+        <textarea id="comment" name="comment" row="45" cols="120" placeholder="Enter your comment here..."></textarea>
+      </label>
     </fieldset>
-
+<input type="submit" value="Submit">
     </form>
   </body>
 
